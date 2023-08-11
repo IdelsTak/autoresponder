@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.idelstak.autoresponder.SettingsViewController">
+    <padding>
+        <Insets bottom="24" left="24" right="24" top="24" />
+    </padding>
+    <Label text="Filters and Keywords" />
+    <TextField fx:id="filtersField" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets bottom="16.0" />
+        </GridPane.margin>
+    </TextField>
+    <Label text="Auto-reply Message" GridPane.rowIndex="2" />
+    <TextArea fx:id="autoReplyTextArea" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets bottom="16.0" />
+        </GridPane.margin>
+    </TextArea>
+    <Button onAction="#saveSettings" text="Save" GridPane.rowIndex="4" />
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
